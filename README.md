@@ -1,18 +1,18 @@
-## Getting Started
+# Desenvolvimento de Sistemas - Front-end I 💻
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Repositório destinado aos estudos de Front-end I e Programação Orientada a Objetos (POO) no curso de **Análise e Desenvolvimento de Sistemas (ADS)** - IFSC.
 
-## Folder Structure
+## 🚀 Tecnologias Estudadas
+- **Front-end:** HTML5, CSS3 e futuramente JavaScript.
+- **Back-end/POO:** Java.
+- **Ferramentas:** Git, GitHub e VS Code.
 
-The workspace contains two folders by default, where:
+## 📂 Estrutura do Repositório
+- `index.html`: Página principal com o índice das aulas.
+- `/aulaXX`: Exercícios e projetos práticos de cada aula de Front-end.
+- `/src`: Projetos em Java desenvolvidos durante a disciplina de POO.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## 🛠️ Como executar o projeto
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/AlineAntuarte/FrontendI.git](https://github.com/AlineAntuarte/FrontendI.git)
