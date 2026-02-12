@@ -4,7 +4,7 @@ Repositório destinado aos estudos de Front-end I no curso de **Análise e Desen
 
 ## 🚀 Tecnologias Estudadas
 
-- **Front-end:** HTML5 e provavelmente JavaScript.
+- **Front-end:** HTML5 (com planos para JavaScript no futuro).
 - **Ferramentas:** Git, GitHub e VS Code.
 
 ## 📂 Estrutura do Repositório
@@ -17,4 +17,4 @@ Repositório destinado aos estudos de Front-end I no curso de **Análise e Desen
 1. Clone o repositório:
 
    ```bash
-   git clone [https://github.com/AlineAntuarte/FrontendI.git](https://github.com/AlineAntuarte/FrontendI.git)
+   git clone https://github.com/AlineAntuarte/FrontendI.git
