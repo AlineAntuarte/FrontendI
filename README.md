@@ -3,7 +3,7 @@
 Repositório destinado aos estudos de Front-end I e Programação Orientada a Objetos (POO) no curso de **Análise e Desenvolvimento de Sistemas (ADS)** - IFSC.
 
 ## 🚀 Tecnologias Estudadas
-- **Front-end:** HTML5, CSS3 e futuramente JavaScript.
+- **Front-end:** HTML5 e provavelmente JavaScript.
 - **Back-end/POO:** Java.
 - **Ferramentas:** Git, GitHub e VS Code.
 
