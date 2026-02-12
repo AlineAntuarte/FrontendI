@@ -1,16 +1,14 @@
 # Desenvolvimento de Sistemas - Front-end I 💻
 
-Repositório destinado aos estudos de Front-end I e Programação Orientada a Objetos (POO) no curso de **Análise e Desenvolvimento de Sistemas (ADS)** - IFSC.
+Repositório destinado aos estudos de Front-end I no curso de **Análise e Desenvolvimento de Sistemas (ADS)** - IFSC.
 
 ## 🚀 Tecnologias Estudadas
 - **Front-end:** HTML5 e provavelmente JavaScript.
-- **Back-end/POO:** Java.
 - **Ferramentas:** Git, GitHub e VS Code.
 
 ## 📂 Estrutura do Repositório
 - `index.html`: Página principal com o índice das aulas.
 - `/aulaXX`: Exercícios e projetos práticos de cada aula de Front-end.
-- `/src`: Projetos em Java desenvolvidos durante a disciplina de POO.
 
 ## 🛠️ Como executar o projeto
 1. Clone o repositório:
