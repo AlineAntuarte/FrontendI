@@ -1,0 +1,7 @@
+:root {
+    --fundoPrincipal: darkgoldenrod;
+}
+
+/* :root: É um lugar especial onde tudo o que você define fica disponível para o documento inteiro. */
+/* --nome-da-variavel: Toda variável CSS precisa começar com dois traços (--). */
+/* Para usar essa variável depois: background-color: var(--fundo-principal);. Se for mudar a cor do site todo, você muda apenas uma linha no :root. */
