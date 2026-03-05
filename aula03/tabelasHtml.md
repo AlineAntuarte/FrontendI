@@ -1,12 +1,24 @@
 # 📊 Analogia: HTML vs. Excel
 
-1. **`<table>` (O Arquivo/Planilha):** É o arquivo `.xlsx` inteiro. Sem ele, você não tem onde colocar os dados. Ele avisa ao navegador: "Tudo o que estiver aqui dentro faz parte de uma tabela".
-2. **`<tr>` (A Linha Numerada):** No Excel, são as linhas 1, 2, 3... Você não consegue escrever um dado no "vácuo"; você primeiro escolhe em qual **Linha** vai trabalhar.
-3. **`<td>` ou `<th>` (A Célula):** É o quadradinho individual (ex: A1, B1). É aqui que você digita o valor.
+* **`<table>` (O Arquivo/Planilha):** É o arquivo `.xlsx` inteiro. Sem ele, você não tem onde colocar os dados. Ele avisa ao navegador: "Tudo o que estiver aqui dentro faz parte de uma tabela".
+
+![alt text](image.png)
+
+* **`<tr>` (A Linha Numerada):** No Excel, são as linhas 1, 2, 3... Você não consegue escrever um dado no "vácuo"; você primeiro escolhe em qual **Linha** vai trabalhar.
+
+![alt text](image-1.png)
+
+* **`<td>` ou `<th>` (A Célula):** É o quadradinho individual (ex: A1, B1). É aqui que você digita o valor.
+
+![alt text](image-2.png)
 
 * **`<th>` (Table Header):** É como aquela célula que você coloca em **Negrito e Centralizado** para ser o título da coluna.
 
+![alt text](image-3.png)
+
 * **`<td>` (Table Data):** É a célula de dado comum, onde vai o conteúdo normal.
+
+![alt text](image-4.png)
 
 ---
 
