@@ -11,10 +11,10 @@ git config --global user.email "aline.ba@aluno.ifsc.edu.br"
 ```
 
 > Salva as credenciais em cache por 4 horas (14400 segundos)
->
-> ```bash
-> git config --global credential.helper 'cache --timeout=14400'
-> ```
+
+```bash
+git config --global credential.helper 'cache --timeout=14400'
+```
 
 -----
 
