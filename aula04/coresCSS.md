@@ -30,7 +30,7 @@ Como você está no VS Code aí no IFSC, não precisa de site externo nem de cal
 3. Lá em cima, no título do seletor, clique para alternar entre **HEX**, **RGB** e **HSL**.
 4. **A barra da direita** no seletor controla a transparência. Quando você arrasta ela, o VS Code muda o código automaticamente para `rgba`.
 
-### Dica:
+### Dica
 
 Se quiser usar o código **Hexadecimal**, pode adicionar a transparência no final dele. O `aliceblue` sólido é `#F0F8FF`. Para 30% de transparência, adicionamos `4D` no final: `#F0F8FF4D`.
 
