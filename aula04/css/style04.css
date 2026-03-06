@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+    /* Isso faz a página deslizar suavemente quando você clica em "Ver meus Hobbies". */
+}
+
 :root {
     --fundoPrincipal: #366899;
 }
@@ -43,6 +48,15 @@ div {
 
 body {
     background-color: var(--fundoPrincipal);
-    margin: 0; /* Tira aquela bordinha branca que fica em volta do site */
-    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+    /* Tira aquela bordinha branca que fica em volta do site */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.impar {
+    background-color: rgb(240, 248, 255, 0.3);
+}
+
+.curso-estilo {
+    background-color: rgb(250, 235, 215, 0.2);
 }
