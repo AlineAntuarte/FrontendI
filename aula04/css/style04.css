@@ -1,5 +1,5 @@
 :root {
-    --fundoPrincipal: darkgoldenrod;
+    --fundoPrincipal: #366899;
 }
 
 /* :root: É um lugar especial onde tudo o que você define fica disponível para o documento inteiro. */
@@ -39,4 +39,10 @@ div {
 .menu {
     width: 100%;
     min-height: 5px;
+}
+
+body {
+    background-color: var(--fundoPrincipal);
+    margin: 0; /* Tira aquela bordinha branca que fica em volta do site */
+    font-family: 'Times New Roman', Times, serif; 
 }
