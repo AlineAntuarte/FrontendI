@@ -8,14 +8,35 @@
 
 /* 1. Estiliza a caixa do menu */
 .menu {
-    background-color: black; /* Fundo preto */
-    padding: 10px;           /* Espaço interno de 10 pixels para não sufocar o texto */
+    background-color: black;
+    /* Fundo preto */
+    padding: 10px;
+    /* Espaço interno de 10 pixels para não sufocar o texto */
 }
 
 /* 2. Estiliza os links que estão DENTRO do menu */
-.menu > a {
+.menu>a {
     /* O Seletor .menu > a: Isso diz ao navegador: "Pinte de branco apenas os links que estão dentro da div menu". Se tiver um link fora dali, ele não será afetado. */
-    text-decoration: none;   /* Tira aquele sublinhado do link */
-    color: white;            /* Deixa a letra branca */
-    margin-right: 15px;      /* Dá um espaço de 15 piixels entre um item e outro */
+    text-decoration: none;
+    /* Tira aquele sublinhado do link */
+    color: white;
+    /* Deixa a letra branca */
+    margin-right: 15px;
+    /* Dá um espaço de 15 piixels entre um item e outro */
+}
+
+div {
+    width: 100%;
+    /*Largura*/
+    /*O que faz: Diz que a div deve ocupar todo o espaço horizontal da tela. Se não colocar isso, às vezes ela pode "encolher" se tiver pouco texto.
+ */
+    min-height: 300px;
+    /*Altura Mínima*/
+    /*O que faz: Garante que a "caixa" tenha pelo menos 300px de altura.
+ */
+}
+
+.menu {
+    width: 100%;
+    min-height: 5px;
 }
