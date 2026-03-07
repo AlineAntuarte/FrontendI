@@ -49,6 +49,10 @@ div {
 body {
     /* O linear-gradient cria uma película escura (40% de opacidade) antes da imagem */
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/home/aluno/FrontendI/imagem/Rio De Janeiro.jpg');
+    background-size: cover;
+    /* Faz a imagem cobrir a tela toda */
+    background-attachment: fixed;
+    /* A imagem fica parada enquanto você rola a página */
     background-color: var(--fundoPrincipal);
     margin: 0;
     /* Tira aquela bordinha branca que fica em volta do site */
