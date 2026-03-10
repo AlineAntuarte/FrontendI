@@ -22,9 +22,24 @@
 
 ---
 
+## 📂 A Planilha Organizada (Modelo HTML5)
+
+Imagine que agora sua planilha não é apenas um monte de células, mas um relatório oficial:
+
+**`<thead>` (O Cabeçalho da Planilha):** No Excel, seriam as primeiras linhas que você congela no topo (geralmente onde ficam os nomes das colunas: "Segunda", "Terça"...).
+**Regra:** Aqui dentro você só coloca os títulos (`<th>`).
+
+**`<tbody>` (O Corpo dos Dados):** São todas as linhas de conteúdo real da sua planilha (onde você listou as matérias como "Redes", "POO"). É o "recheio" da tabela.
+**Regra:** É onde fica o grosso das suas linhas (`<tr>`) e células de dados (`<td>`).
+
+**`<tfoot>` (O Rodapé/Totalizador):** No Excel, é aquela última linha onde você faz um =SOMA() ou coloca uma observação final.
+**Regra:** Fica no final de tudo para fechar o relatório.
+
+---
+
 ## Exemplo Visual no Código
 
-```html
+    ```html
     <table>
         <tr>
             <th>Dia</th>
@@ -41,7 +56,7 @@
         ...
     </table>
 
-```
+    ```
 
 ### Resumo da Hierarquia
 
