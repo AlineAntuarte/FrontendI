@@ -48,7 +48,7 @@ div {
 
 body {
     /* O linear-gradient cria uma película escura (40% de opacidade) antes da imagem */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/home/aluno/FrontendI/imagem/RioDeJaneiroBackground.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('imagem/RioDeJaneiroBackground.jpg');
     background-size: cover;
     /* Faz a imagem cobrir a tela toda */
     background-attachment: fixed;
@@ -60,9 +60,9 @@ body {
 }
 
 .impar {
-    background-color: rgb(240, 248, 255, 0.3);
+    background-color: rgb(240, 248, 255, 0.6);
 }
 
 .curso-estilo {
-    background-color: rgb(250, 235, 215, 0.2);
+    background-color: rgb(250, 235, 215, 0.5);
 }
