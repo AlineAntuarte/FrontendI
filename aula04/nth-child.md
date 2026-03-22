@@ -1,10 +1,10 @@
 # 📊 Entendendo o Seletor de Tabela Zebra no CSS
 
-Neste guia, vamos dissecar o funcionamento do seletor que cria o efeito de "listras de zebra" em tabelas, facilitando a leitura de dados, como a nossa **Grade Horária**.
+Guia para entender o funcionamento do seletor que cria o efeito de "listras de zebra" em tabelas.
 
 ## 🕵️ Anatomia do Seletor Composto
 
-O comando que usamos no arquivo `style04.css` foi:
+O comando que usei no arquivo `style04.css` foi:
 `tbody tr:nth-child(even) { ... }`
 
 Cada parte desse comando funciona como um **filtro de endereço** para o navegador:
@@ -36,10 +36,6 @@ Se você quiser inverter as cores ou ser mais específico, pode trocar o que vai
 * **`nth-child(odd)`**: Pinta as linhas **ÍMPARES** (1, 3, 5...).
 * **`nth-child(3)`**: Pinta especificamente apenas a **3ª linha**.
 * **`nth-child(3n)`**: Pinta de **3 em 3** linhas (múltiplos de 3).
-
----
-
-> **Nota de ADS:** O uso de seletores como o `nth-child` demonstra domínio de **Pseudo-classes**, um conceito fundamental para criar layouts dinâmicos e profissionais sem "sujar" o HTML com estilos manuais.
 
 ---
 *Documentação criada para os estudos de Frontend I - IFSC.*
