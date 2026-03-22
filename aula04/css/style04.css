@@ -17,6 +17,14 @@ html {
     /* Fundo preto */
     padding: 10px;
     /* Espaço interno de 10 pixels para não sufocar o texto */
+    width: 100%;
+    min-height: 5px;
+    position: sticky;
+    /* Uma variação do relative/fixed */
+    top: 0;
+    /* Faz o menu "grudar" no topo enquanto você rola */
+    z-index: 1000;
+    /* Garante que ele fique por cima das outras divs */
 }
 
 /* 2. Estiliza os links que estão DENTRO do menu */
@@ -39,12 +47,12 @@ div {
     /*Altura Mínima*/
     /*O que faz: Garante que a "caixa" tenha pelo menos 300px de altura.
  */
+
+    display: flow-root;
+    /* O display: flow-root é uma maneira de dizer "Ei, div, você é um bloco independente",
+    evitando problemas de "colapso de margens" mesmo que tenha elementos flutuantes dentro dela. */
 }
 
-.menu {
-    width: 100%;
-    min-height: 5px;
-}
 
 body {
     /* O linear-gradient cria uma película escura (40% de opacidade) antes da imagem */
