@@ -45,6 +45,15 @@ section {
     display: flow-root;
 }
 
+.titulo {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    min-height: 5px;
+    text-align: center;
+    color: white;
+    padding: 2px;
+
+}
 
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imagem/RioDeJaneiroBackground.jpg');
@@ -61,16 +70,11 @@ body {
 
 .par {
     color: white;
+    background-color: rgba(150, 164, 177, 0.3);
 }
 
 .curso-estilo {
     background-color: rgba(250, 235, 215, 0.5);
-}
-
-h1 {
-    text-align: center;
-    color: rgba(4, 4, 43);
-    padding-top: 20px;
 }
 
 footer {
