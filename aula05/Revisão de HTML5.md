@@ -50,10 +50,17 @@ Um elemento semântico descreve claramente seu significado tanto para o **navega
 
 Para praticar, o objetivo é criar um documento HTML completo **sem utilizar `<div>`**:
 
-1. Crie um documento HTML completo com `<body>` e `<head>`.
-2. Dentro de uma divisão com semântica (ex: `<section>`), adicione um título com o seu nome e um parágrafo sobre sua futura carreira.
-3. Faça duas listas: uma **ordenada** com as habilidades que você possui e outra **não ordenada** com as habilidades que espera adquirir.
-4. Faça uma **lista descritiva** com o par disciplina/professor que você está cursando.
-5. **Regra de Ouro:** Todas as divisões devem ter semântica (não usar `<div>`).
+1. **Estrutura Completa**: O documento deve obrigatoriamente conter as tags raiz: `<!DOCTYPE html>`, `<html>`, `<head>` (para metas e títulos) e `<body>` (para o conteúdo visível).
+
+2. **Identificação Semântica**: No lugar de usar uma `<div>` para o seu nome, use uma tag que indique "seção" ou "artigo" (como `<section>` ou `<article>`)[cite: 1135, 1167]. [cite_start]Dentro dela, coloque um `<h1>` com seu nome e um `<p>` sobre sua carreira futura.
+
+3. **Listas Ordenadas e Não Ordenadas**:
+
+   * **Ordenada (`<ol>`)**: Use para suas habilidades atuais, onde o número indica a ordem de importância (ex: 1. Java, 2. Git).
+   * **Não Ordenada (`<ul>`)**: Use para habilidades que quer adquirir, pois não há uma ordem rígida de aprendizado ainda.
+
+4. **Lista de Descrição (`<dl>`)**: Use as tags `<dl>` (lista), `<dt>` (termo: a disciplina) e `<dd>` (descrição: o nome do professor) para listar o que você está cursando no semestre.
+
+5. **Proibição de `<div>`**: O objetivo deste exercício é forçar você a usar as novas tags do HTML5[cite: 1170, 1183]. Para cada "caixa" que você pensaria em usar uma `div`, tente encaixar um `<header>`, `<main>`, `<section>`, `<article>` ou `<footer>`.
 
 ---
