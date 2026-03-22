@@ -52,7 +52,7 @@ Para praticar, o objetivo é criar um documento HTML completo **sem utilizar `<d
 
 1. **Estrutura Completa**: O documento deve obrigatoriamente conter as tags raiz: `<!DOCTYPE html>`, `<html>`, `<head>` (para metas e títulos) e `<body>` (para o conteúdo visível).
 
-2. **Identificação Semântica**: No lugar de usar uma `<div>` para o seu nome, use uma tag que indique "seção" ou "artigo" (como `<section>` ou `<article>`)[cite: 1135, 1167]. [cite_start]Dentro dela, coloque um `<h1>` com seu nome e um `<p>` sobre sua carreira futura.
+2. **Identificação Semântica**: No lugar de usar uma `<div>` para o seu nome, use uma tag que indique "seção" ou "artigo" (como `<section>` ou `<article>`) Dentro dela, coloque um `<h1>` com seu nome e um `<p>` sobre sua carreira futura.
 
 3. **Listas Ordenadas e Não Ordenadas**:
 
@@ -61,6 +61,6 @@ Para praticar, o objetivo é criar um documento HTML completo **sem utilizar `<d
 
 4. **Lista de Descrição (`<dl>`)**: Use as tags `<dl>` (lista), `<dt>` (termo: a disciplina) e `<dd>` (descrição: o nome do professor) para listar o que você está cursando no semestre.
 
-5. **Proibição de `<div>`**: O objetivo deste exercício é forçar você a usar as novas tags do HTML5[cite: 1170, 1183]. Para cada "caixa" que você pensaria em usar uma `div`, tente encaixar um `<header>`, `<main>`, `<section>`, `<article>` ou `<footer>`.
+5. **Proibição de `<div>`**: O objetivo deste exercício é forçar você a usar as novas tags do HTML5. Para cada "caixa" que você pensaria em usar uma `div`, tente encaixar um `<header>`, `<main>`, `<section>`, `<article>` ou `<footer>`.
 
 ---

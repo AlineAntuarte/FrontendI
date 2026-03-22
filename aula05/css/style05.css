@@ -88,6 +88,9 @@ body {
 .impar {
     background-color: rgba(240, 248, 255, 0.6);
 }
+.par{
+    color: white;
+}
 
 .curso-estilo {
     background-color: rgba(250, 235, 215, 0.5);
