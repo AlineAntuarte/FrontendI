@@ -39,7 +39,7 @@ html {
     bottom: 0;
 }
 
-div {
+section {
     width: 100%;
     min-height: 300px;
     display: flow-root;
