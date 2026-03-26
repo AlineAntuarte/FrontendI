@@ -6,6 +6,15 @@ html {
     --fundoPrincipal: #366899;
 }
 
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imagem/RioDeJaneiroBackground.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--fundoPrincipal);
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .menu {
     background-color: black;
     padding: 10px;
@@ -16,34 +25,10 @@ html {
     top: 0;
 }
 
-.menubottom {
-    background-color: black;
-    padding: 10px;
-    width: 100%;
-    min-height: 5px;
-    text-align: center;
-    z-index: 1000;
-    margin-bottom: 0;
-}
-
 .menu>a {
     text-decoration: none;
     color: white;
     margin-right: 15px;
-}
-
-.menubottom>a {
-    text-decoration: none;
-    color: white;
-    margin-right: 15px;
-    bottom: 0;
-}
-
-section {
-    width: 100%;
-    min-height: 300px;
-    display: flow-root;
-    padding: 1px 15px;
 }
 
 .titulo {
@@ -53,15 +38,6 @@ section {
     text-align: center;
     color: white;
     padding: 2px;
-}
-
-body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imagem/RioDeJaneiroBackground.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-color: var(--fundoPrincipal);
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .impar {
@@ -77,18 +53,8 @@ body {
     background-color: rgba(48, 116, 133, 0.85);
 }
 
-footer {
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 0;
-    width: 100%;
-}
-
-footer a {
-    color: #366899;
-    text-decoration: none;
+.Docentes {
+    padding: auto;
 }
 
 table {
@@ -119,4 +85,35 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: rgba(121, 147, 187, 0.6);
     transition: 0.3s;
+}
+
+.menubottom {
+    background-color: black;
+    padding: 10px;
+    width: 100%;
+    min-height: 5px;
+    text-align: center;
+    z-index: 1000;
+    margin-bottom: 0;
+}
+
+.menubottom>a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+    bottom: 0;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #366899;
+    text-decoration: none;
 }
