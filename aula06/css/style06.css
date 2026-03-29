@@ -93,7 +93,7 @@ li img {
     background-color: rgba(48, 116, 133, 0.85);
 }
 
-.meuDiferencial {
+.carreira-estilo>img {
     max-width: 25%;
     /* Garante que a foto nunca ultrapasse a tela do celular */
     height: auto;
