@@ -69,20 +69,27 @@ body {
     padding: 2px;
 }
 
+/* Padroniza o tamanho das duas seções para o layout não ficar torto */
 .impar {
     background-color: rgba(240, 248, 255, 0.6);
-    padding: 50px;
+    padding: 30px 40px;
+    /* 30px em cima/baixo, 40px nas laterais */
 }
 
 .par {
-    color: white;
     background-color: rgba(150, 164, 177, 0.3);
-    padding: 10px;
+    padding: 30px 40px;
+    /* Exatamente igual à impar para manter a simetria */
+    color: white;
 }
 
-.impar,
-.par>li {
-    padding-left: 20px;
+/* Devolve o recuo natural das listas que o Reset havia apagado */
+ul,
+ol {
+    padding-left: 40px;
+    /* Empurra o texto para dar espaço aos números/bolinhas */
+    margin-top: 15px;
+    /* Dá um respiro entre o título H2 e o começo da lista */
 }
 
 li img {
