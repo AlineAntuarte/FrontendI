@@ -1,9 +1,30 @@
-html {
-    scroll-behavior: smooth;
+/* Isso garante que nada tenha margem sobrando por padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Faz o padding não 'estourar' a largura */
 }
 
 :root {
     --fundoPrincipal: #366899;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    /* Isso impede que o site 'dance' para os lados */
+}
+
+section,
+header,
+nav,
+footer {
+    width: 100%;
+    display: flow-root;
+    /* Se um elemento qualquer contém elementos-filho, o flow-root faz com que o pai envolva completamente esses elementos, ajustando sua altura automaticamente. */
 }
 
 section {
@@ -19,6 +40,7 @@ body {
     background-attachment: fixed;
     background-color: var(--fundoPrincipal);
     margin: 0;
+    width: 100%;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -35,7 +57,6 @@ body {
 .menu>a {
     text-decoration: none;
     color: white;
-    margin-right: 15px;
 }
 
 .titulo {
@@ -56,12 +77,41 @@ body {
     background-color: rgba(150, 164, 177, 0.3);
 }
 
+li img {
+    width: 25px;
+    /* Tamanho do ícone */
+    /* largura */
+    height: auto;
+    /* altura */
+    vertical-align: middle;
+    /* alinhamento vertical */
+    margin-left: 10px;
+    /* margem direita */
+}
+
 .carreira-estilo {
     background-color: rgba(48, 116, 133, 0.85);
 }
 
+.meuDiferencial {
+    max-width: 25%;
+    /* Garante que a foto nunca ultrapasse a tela do celular */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    /* Adiciona cantos arredondados para um visual mais suave */
+    margin: 20px 0;
+    /* Adiciona espaço apenas acima e abaixo da imagem */
+}
+
 .Docentes {
     padding: auto;
+    text-decoration: none;
+    color: inherit;
+}
+
+.Docentes:hover {
+    color: #0c2b4b;
 }
 
 table {
@@ -107,7 +157,6 @@ tbody tr:hover {
 .menubottom>a {
     text-decoration: none;
     color: white;
-    margin-right: 15px;
     bottom: 0;
 }
 
