@@ -103,7 +103,7 @@ li img {
 }
 
 .img-carreira {
-    max-width: 2%;
+    width: 32%;
     /* Cada foto irá ocupar 1/3 da tela */
     height: 250px;
     /* Mantém uma altura fixa para as três */
