@@ -18,8 +18,7 @@ O projeto está organizado cronologicamente por aulas. Cada pasta contém os arq
 * [**aula03/**](./aula03/): Estruturação de Tabelas e Listas no HTML. *(Inclui notas teóricas adicionais)*.
 * [**aula04/**](./aula04/): Aplicação de CSS externo, cores, estilização dinâmica de tabelas (efeito zebra) e correção de colapso de margens.
 * [**aula05/**](./aula05/): Refatoração para HTML Semântico (substituição de `divs` genéricas) e entendimento prático dos modelos de renderização (Bloco vs. Linha).
-* [**aula06/**](./aula06/): Organização com elementos genéricos, caracteres de escape, rotas de links e multimídia (inserção de ícones de habilidades e links do Lattes).
-
+* [**aula06/**](./aula06/): Organização com elementos genéricos, caracteres de escape, rotas de links, multimédia e introdução ao **Flexbox** para alinhamento horizontal de blocos de texto e de imagens.
 *(As pastas de aulas futuras já estão mapeadas na estrutura e serão documentadas conforme o andamento do semestre).*
 
 ## 🛠️ Tecnologias e Ferramentas
