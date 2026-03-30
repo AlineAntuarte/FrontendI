@@ -45,7 +45,7 @@ body {
 }
 
 .menu {
-    background-color: black;
+    background-color: rgb(13, 14, 24);
     padding: 10px;
     width: 100%;
     min-height: 5px;
@@ -183,7 +183,7 @@ tbody tr:hover {
 }
 
 .menubottom {
-    background-color: black;
+    background-color: rgb(13, 14, 24);
     padding: 10px;
     width: 100%;
     min-height: 5px;
@@ -199,7 +199,7 @@ tbody tr:hover {
 }
 
 footer {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(13, 14, 24, 0.75);
     color: white;
     text-align: center;
     padding: 20px;
