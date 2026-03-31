@@ -152,6 +152,27 @@ li img {
     color: #0c2b4b;
 }
 
+/* 1. A célula (th) cuida das cores e de manter tudo perfeitamente no centro */
+.titulo-lateral {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    /* Centraliza na horizontal */
+    vertical-align: middle;
+    /* Centraliza na vertical (Crucial para tabelas!) */
+    padding: 10px;
+}
+
+/* 2. O span cuida exclusivamente de girar o texto */
+.titulo-lateral span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: inline-block;
+    /* Permite que o span seja girado sem quebrar o layout da célula */
+    letter-spacing: 3px;
+    /* Dá um espaçamento elegante entre as letras */
+}
+
 table {
     width: 90%;
     margin: 20px auto;
