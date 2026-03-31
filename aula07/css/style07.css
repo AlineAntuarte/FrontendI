@@ -169,8 +169,6 @@ li img {
     transform: rotate(180deg);
     display: inline-block;
     /* Permite que o span seja girado sem quebrar o layout da célula */
-    letter-spacing: 3px;
-    /* Dá um espaçamento elegante entre as letras */
 }
 
 table {
