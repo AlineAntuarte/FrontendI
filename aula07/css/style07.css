@@ -141,7 +141,6 @@ li img {
     text-align: justify;
 }
 
-
 .Docentes {
     padding: auto;
     text-decoration: none;
@@ -199,6 +198,12 @@ tbody tr:nth-child(even) {
 tbody tr:hover {
     background-color: rgba(121, 147, 187, 0.6);
     transition: 0.3s;
+}
+
+.viagens img {
+    width: 80px;
+    height: 80px;
+    vertical-align: center;
 }
 
 .menubottom {
