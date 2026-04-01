@@ -203,7 +203,6 @@ tbody tr:hover {
 .viagens h2 {
     text-align: center;
     margin: 0 2px 2px 2px;
-
     color: #2c3e50;
 }
 
@@ -227,6 +226,15 @@ tbody tr:hover {
     text-decoration: none;
     color: white;
     bottom: 0;
+}
+
+.musica>p {
+    color: white;
+    text-align: center;
+}
+
+.musica audio {
+    margin: 15px;
 }
 
 footer {
