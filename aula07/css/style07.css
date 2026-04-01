@@ -151,6 +151,69 @@ li img {
     color: #0c2b4b;
 }
 
+/* 1. Centraliza o Título da Seção */
+.titulo-Docentes {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* 2. O Container Flexível para as caixinhas */
+.container-Docentes {
+    display: flex;
+    flex-wrap: wrap;
+    /* Se a tela for pequena, permite que as caixinhas caiam para a linha de baixo */
+    justify-content: space-between;
+    /* Centraliza as caixinhas horizontalmente */
+    gap: 20px;
+    /* Espaçamento entre as caixinhas */
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* 3. O Visual da Caixinha (Card) individual */
+.card-Docentes {
+    background-color: rgba(240, 248, 255, 0.6);
+    /* Fundo azulado com um pouco de transparência para deixar o fundo aparecer */
+    border-radius: 12px;
+    /* Cantos arredondados para um visual mais suave */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante para dar profundidade */
+
+    flex: 1 1 200px;
+    max-width: 250px;
+    /* Largura fixa para manter a consistência */
+
+    padding: 15px;
+    margin-bottom: 15px;
+
+    border-top: 5px solid var(--fundoPrincipal);
+    /* Uma borda colorida no topo para destacar cada card */
+    transition: transform 0.3s;
+    text-align: center;
+    /* Centraliza o texto dentro da caixinha */
+}
+
+/* Animação: Dá um "pulinho" quando você passa o mouse por cima */
+.card-Docentes:hover {
+    transform: translateY(-8px);
+    /* Move a caixinha para cima */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    /* Aumenta a sombra para dar um efeito de destaque */
+}
+
+/* 4. Remove a margem padrão chata da tag <dd> */
+.card-Docentes dd {
+    text-decoration: none;
+    margin-left: 0;
+    /* Remove o recuo padrão */
+    margin-top: 8px;
+    /* Dá um respiro entre o título (dt) e a descrição (dd) */
+    color: #333;
+    /* Cor do texto para melhor leitura */
+}
+
 /* 1. A célula (th) cuida das cores e de manter tudo perfeitamente no centro */
 .titulo-lateral {
     background-color: #2c3e50;
