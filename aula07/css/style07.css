@@ -200,6 +200,13 @@ tbody tr:hover {
     transition: 0.3s;
 }
 
+.viagens h2 {
+    text-align: center;
+    margin: 0 2px 2px 2px;
+
+    color: #2c3e50;
+}
+
 .viagens img {
     width: 80px;
     height: 80px;
