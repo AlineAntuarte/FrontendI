@@ -228,13 +228,42 @@ tbody tr:hover {
     bottom: 0;
 }
 
+/* 1. Estiliza a "Caixa" que guarda o texto e o player */
+.musica {
+    background-color: rgba(13, 14, 24, 0.7);
+    /* Fundo sutilmente transparente */
+    border-radius: 15px;
+    /* Deixa as quinas redondas */
+    padding: 15px;
+    width: 500px;
+    /* Impede que a caixa estique pela tela toda */
+    margin: 20px auto;
+    /* Centraliza a caixa perfeitamente no footer */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Dá uma sombra 3D */
+}
+
+/* 2. Estiliza o texto do BTS */
 .musica>p {
     color: white;
     text-align: center;
+    margin-bottom: 15px;
+    /* Dá um respiro entre o texto e o botão de play */
+    font-style: italic;
 }
 
+/* 3. Estiliza o Player Nativo */
 .musica audio {
-    margin: 15px;
+    width: 100%;
+    /* Faz a barra de progresso ocupar 100% da caixa que criamos */
+    outline: none;
+    /* Remove a borda azul feia ao clicar */
+    opacity: 0.5;
+}
+
+/* Brilho extra ao passar o mouse */
+.musica audio:hover {
+    opacity: 1;
 }
 
 footer {
