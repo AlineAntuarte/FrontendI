@@ -109,6 +109,16 @@ li img {
     padding: 10px;
 }
 
+.carreira-estilo h2 {
+    color: white;
+    margin: 15px auto;
+    padding: 15px 5px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #2c3e50;
+    width: 200px;
+}
+
 .img-carreira {
     width: 32%;
     /* Cada foto irá ocupar 1/3 da tela */
