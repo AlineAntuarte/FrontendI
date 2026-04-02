@@ -36,7 +36,7 @@ Se você escreve `.carreira-estilo > h2` (com o `>`):
 * **O que o CSS entende:** *"Pegue APENAS o `h2` que for **filho direto** da caixa `.carreira-estilo`."*
 * **Por que funcionou:** Ele olhou para a sua `<section class="carreira-estilo">` e estilizou apenas o `h2` que estava colado nela. Se houvesse outro `h2` escondido mais para dentro (dentro do `div.container-flex`, por exemplo), o CSS iria ignorar, porque esse outro `h2` seria "neto", e o `>` só atinge "filhos".
 
-### Resumo de Ouro para salvar no seu `.md`:
+### Resumo de Ouro para salvar no seu `.md`
 
 * `p` 👉 Estiliza TODOS os parágrafos do site.
 * `.caixa` 👉 Estiliza todos os elementos que tenham `class="caixa"`.
