@@ -35,7 +35,7 @@ section {
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imagem/RioDeJaneiroBackground.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imagem/PapeldeFundo-7680x4320(4K)/texturaPedra.png');
     background-size: cover;
     background-attachment: fixed;
     background-color: var(--fundoPrincipal);
@@ -66,7 +66,7 @@ body {
     min-height: 5px;
     text-align: center;
     color: white;
-    padding: 2px;
+    padding: 12px;
 }
 
 /* Padroniza o tamanho das duas seções para o layout não ficar torto */
