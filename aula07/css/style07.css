@@ -125,30 +125,20 @@ li img {
 }
 
 /* Mágica do Flexbox para alinhar lado a lado */
-.container-flex {
+.conteiner-flex {
     display: flex;
     justify-content: space-between;
     /* Distribui o espaço entre os elementos */
     gap: 20px;
     /* Adiciona um espaço fixo entre as imagens */
     margin-bottom: 30px;
-    /* Adiciona um espaço abaixo do container para separar da próxima seção (textos e imagens)*/
+    /* Adiciona um espaço abaixo do conteiner para separar da próxima seção (textos e imagens)*/
 }
 
 .item-flex {
     flex: 1;
     /*Faz os três blocos de texto terem a mesma largura*/
     text-align: justify;
-}
-
-.Docentes {
-    padding: auto;
-    text-decoration: none;
-    color: inherit;
-}
-
-.Docentes:hover {
-    color: #0c2b4b;
 }
 
 /* 1. Centraliza o Título da Seção */
@@ -159,40 +149,45 @@ li img {
     font-size: 24px;
 }
 
-/* 2. O Container Flexível para as caixinhas */
-.container-Docentes {
+/* 2. O conteiner Flexível para as caixinhas */
+.conteiner-Docentes {
     display: flex;
-    flex-wrap: wrap;
-    /* Se a tela for pequena, permite que as caixinhas caiam para a linha de baixo */
-    justify-content: space-between;
-    /* Centraliza as caixinhas horizontalmente */
+    flex-wrap: nowrap;
+    /* PROÍBE os cards de caírem para a linha de baixo */
+    overflow-x: auto;
+    /* Cria a rolagem horizontal */
+
+    /* Efeito Carrosel - Scroll Snap */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    padding: 20px;
     gap: 20px;
-    /* Espaçamento entre as caixinhas */
     margin-bottom: 40px;
-    padding: 0;
 }
 
 /* 3. O Visual da Caixinha (Card) individual */
 .card-Docentes {
     background-color: rgba(240, 248, 255, 0.6);
     /* Fundo azulado com um pouco de transparência para deixar o fundo aparecer */
+    padding: 15px;
+    margin-bottom: 15px;
     border-radius: 12px;
     /* Cantos arredondados para um visual mais suave */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     /* Sombra elegante para dar profundidade */
+    text-align: center;
+    /* Centraliza o texto dentro da caixinha */
 
-    flex: 1 1 200px;
-    max-width: 250px;
-    /* Largura fixa para manter a consistência */
-
-    padding: 15px;
-    margin-bottom: 15px;
+    flex: 0 0 300px;
+    /* Não encolhe, não cresce, fica exato em 300px */
+    /* Trava o card na tela quando o usuário rolar */
+    scroll-snap-align: center;
 
     border-top: 5px solid var(--fundoPrincipal);
     /* Uma borda colorida no topo para destacar cada card */
     transition: transform 0.3s;
-    text-align: center;
-    /* Centraliza o texto dentro da caixinha */
+
 }
 
 /* Animação: Dá um "pulinho" quando você passa o mouse por cima */
@@ -203,15 +198,50 @@ li img {
     /* Aumenta a sombra para dar um efeito de destaque */
 }
 
+/* BÔNUS: Estilizando a barra de rolagem para ficar bonitinha (estilo setinha invisível) */
+.conteiner-Docentes::-webkit-scrollbar {
+    height: 8px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+.conteiner-Docentes::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    /* Deixa o fundo da barra transparente */
+    border-radius: 10px;
+}
+
+.conteiner-Docentes::-webkit-scrollbar-thumb {
+    background: var(--fundoPrincipal);
+    /* Cor do "thumb" (a parte que você arrasta) */
+    border-radius: 10px;
+}
+
+/* BÔNUS: Estilizando a barra de rolagem para ficar bonitinha (estilo setinha invisível) */
+
 /* 4. Remove a margem padrão chata da tag <dd> */
 .card-Docentes dd {
-    text-decoration: none;
     margin-left: 0;
     /* Remove o recuo padrão */
     margin-top: 8px;
     /* Dá um respiro entre o título (dt) e a descrição (dd) */
     color: #333;
     /* Cor do texto para melhor leitura */
+}
+
+/* 5. Estiliza os links diretamente dentro da caixinha */
+.card-Docentes a {
+    color: var(--fundoPrincipal);
+    /* Usa a cor principal do site para os links */
+    text-decoration: none;
+    /* Remove o sublinhado feio */
+    transition: 0.3s;
+    /* Deixa a mudança de cor suave */
+}
+
+/* O efeito ao passar o mouse */
+.card-Docentes a:hover {
+    color: #0c2b4b;
+    /* Escurece a cor para indicar que é clicável */
 }
 
 /* 1. A célula (th) cuida das cores e de manter tudo perfeitamente no centro */
