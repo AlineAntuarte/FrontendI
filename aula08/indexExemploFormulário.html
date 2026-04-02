@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula de Formulários</title>
+    <script>var __uzdbm_1 = "6da5c112-f4e6-4316-b39b-4e3789c19aff"; var __uzdbm_2 = "MzhkYTFlOTAtZGwzeS00NDQ2LTgxNDMtZmRmNGJhMGUxNjcyJDE5MS4zNi4xMy4yMzk="; var __uzdbm_3 = "7f90006da5c112-f4e6-4316-b39b-4e3789c19aff1-1775166124767631969-00118025afb910f52b546"; var __uzdbm_4 = "false"; var __uzdbm_5 = "uzmx"; var __uzdbm_6 = "7f9000366ba35b-1ec6-4aad-996d-6ab79dd2bbce1-1775166124768631968-473632d6667fd42046"; var __uzdbm_7 = "ifsc.edu.br";</script>
+    <script>   (function (w, d, e, u, c, g, a, b) { w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || { ss_cid: c, domain_info: "auto", }; w[g] = function (i, j) { w["SSJSConnectorObj"][i] = j; }; a = d.createElement(e); a.async = true; if (navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1) { u = u.replace("/advanced/", "/advanced/ie/"); } a.src = u; b = d.getElementsByTagName(e)[0]; b.parentNode.insertBefore(a, b); })(window, document, "script", "/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js", "dl40", "ssConf"); ssConf("c1", "https://sig.ifsc.edu.br"); ssConf("c3", "c99a4269-161c-4242-a3f0-28d44fa6ce24"); ssConf("au", "sig.ifsc.edu.br"); ssConf("cu", "validate.perfdrive.com, ssc"); </script>
+</head>
+
+<body>
+    <p>Preencha o formulário abaixo:</p>
+
+    <form action="indexExemploFormulário.html">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" value="Arliones Stevert Hoeller Junior" readonly></td>
+            </tr>
+            <tr>
+                <td>Fale sobre você:</td>
+                <td><textarea name="sobre_você" placeholder="Um texto sobre você" rows="10" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    Tem carro?
+                </td>
+                <td>
+                    <input type="radio" name="carro" value="sim">Sim
+                    <input type="radio" name="carro" value="nao">Não
+
+                </td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="email" name="email" size="50"></td>
+            </tr>
+            <tr>
+                <td>Senha:</td>
+                <td><input type="password" name="senha"></td>
+            </tr>
+            <tr>
+                <td>
+                    Comida favorita:
+                </td>
+                <td>
+                    <select name="comida" size="5">
+                        <optgroup label="Carnes">
+                            <option value="boi">Carne de boi</option>
+                            <option value="frango">Carne de frango</option>
+                        </optgroup>
+                        <optgroup label="Massas">
+                            <option value="macarrao">Macarrão</option>
+                            <option value="nhoque">Nhoque</option>
+                        </optgroup>
+                        <optgroup label="Doces">
+                            <option value="chocolate">Chocolate</option>
+                            <option value="paçoca">Paçoca</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Envie uma foto sua:
+                </td>
+                <td>
+                    <input type="file" name="foto" accept="jpg">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Enviar">
+                </td>
+                <td>
+                    <input type="reset" value="Limpar">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
