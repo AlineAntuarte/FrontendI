@@ -6,7 +6,7 @@ Repositório destinado aos estudos da disciplina de **Programação Front-end I*
 
 * **Estruturação com HTML5:** Domínio de tags semânticas (`<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`), criação de listas (`<ul>`, `<ol>`, `<dl>`) e construção de tabelas de dados complexas (com mesclagem avançada de células utilizando `rowspan` e `colspan`).
 * **Estilização com CSS3:** Separação de responsabilidades com folhas de estilo externas, aplicação do Box Model (`margin`, `padding`), uso de variáveis globais (`:root`), controle de posicionamento (`sticky`, `fixed`), e criação de interfaces modernas com **Flexbox** e **CSS Scroll Snap** (para carrosséis interativos).
-* **Seletores Avançados:** Uso de pseudo-classes como `:nth-child` para automação de estilos e `:hover` para interatividade em links e tabelas.
+* **Seletores Avançados:** Uso de pseudo-classes como `:nth-child` para automação de estilos e `:hover` para interatividade em links e tabelas, compreendendo a hierarquia de seletores (descendentes e filhos diretos `>`).
 * **Multimídia e Navegação:** Gerenciamento de caminhos relativos para imagens e ícones, formatação de links âncora para navegação suave (*Smooth Scroll*), links externos, protocolos de comunicação rápida (`mailto:` e `tel:`), e incorporação nativa de mídias (`<audio>`).
 
 ## 📂 Estrutura do Repositório
@@ -19,7 +19,7 @@ O projeto está organizado cronologicamente por aulas. Cada pasta contém os arq
 * [**aula04/**](./aula04/): Aplicação de CSS externo, cores, estilização dinâmica de tabelas (efeito zebra) e correção de colapso de margens.
 * [**aula05/**](./aula05/): Refatoração para HTML Semântico (substituição de `divs` genéricas) e entendimento prático dos modelos de renderização (Bloco vs. Linha).
 * [**aula06/**](./aula06/): Organização com elementos genéricos, caracteres de escape, rotas de links, multimídia e introdução ao Flexbox para alinhamento horizontal de blocos de texto e imagens.
-* [**aula07/**](./aula07/): Validação W3C, tabelas avançadas (mesclagem de células assíncronas), incorporação de mídias nativas e design de componentes em formato de *cards* com rolagem estilo carrossel.
+* [**aula07/**](./aula07/): Validação W3C com selos de aprovação (HTML5 e CSS3 Nível 3), tabelas avançadas (mesclagem de linhas e colunas), incorporação de mídias nativas e design de componentes em formato de *cards* com rolagem estilo carrossel.
 
 *(As pastas de aulas futuras já estão mapeadas na estrutura e serão documentadas conforme o andamento do semestre).*
 
