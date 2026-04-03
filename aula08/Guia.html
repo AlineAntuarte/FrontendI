@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <section class="impar">
-        <h1 style="text-align: center; color: antiquewhite; padding-top: 20px;">GUIA</h1>
-        <h2 style="text-align: center; color: antiquewhite; padding-top: 20px;">Agência de Empregos ADS</h2>
+    <section class="formulario-flex">
+        <h1 style="text-align: center; color: #4f4f4f; padding-top: 20px;">GUIA</h1>
+        <h2 style="text-align: center; color: #4f4f4f; padding-top: 20px;">Agência de Empregos ADS</h2>
         <p style="text-align: center; margin-bottom: 30px;">
             Cadastre seu perfil profissional para encontrar as melhores vagas na área de TI.
         </p>
@@ -41,6 +41,67 @@
             </div>
             <br>
 
+            <!-- Isso é música para os meus ouvidos, Aline! Digitar o código linha por linha, quebrar as coisas e ver a tela mudando a cada "F5" é a verdadeira essência de como se aprende a programar de verdade. 
+
+            Já que você tem as entradas 1, 2 e 3 (Texto, E-mail e Data) prontas, vamos para o próximo bloco de perguntas da nossa Agência de Empregos. O professor pediu pelo menos 10 entradas, então agora vamos adicionar mais três tipos muito importantes: **Menu de Seleção, Botões de Rádio e Upload de Arquivo**.
+
+            Você vai digitar esses blocos logo abaixo da sua entrada de Data e **antes** do botão de "Enviar Cadastro".
+
+            ### Entrada 4: Menu Suspenso (`<select>`)
+            Para a vaga de interesse, vamos usar o `<select>`. O legal aqui é usar a tag `<optgroup>` que o professor mostrou nos slides para criar "categorias" de vagas (Desenvolvimento e Infraestrutura). Fica muito organizado!-->
+
+            <!-- Entrada 4: Seleção (Select) -->
+            <div>
+                <label for="vaga">Vaga de Interesse:</label>
+                <select id="vaga" name="vaga" required>
+                    <!-- optgroup agrupa as opções visualmente, mas não pode ser clicado -->
+                    <optgroup label="Desenvolvimento">
+                        <option value="frontend">Desenvolvedor(a) Frontend</option>
+                        <option value="backend">Desenvolvedor(a) Backend</option>
+                    </optgroup>
+                    <optgroup label="Infraestrutura">
+                        <option value="redes">Analista de Redes</option>
+                        <option value="bd">Administrador(a) de Banco de Dados</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br>
+
+            <!-- *Dica de Ouro:* O texto que o usuário vê é o que está entre as tags `<option>`, mas o que vai para o servidor de verdade é o que está no atributo `value="..."`.
+
+            ### Entrada 5: Botão de Rádio (`type="radio"`)
+            Sabe aquelas opções em que você só pode marcar uma (se marcar a outra, a primeira desmarca)? São os *radio buttons*. O segredo deles é que **todos precisam ter exatamente o mesmo `name`** para o navegador entender que eles fazem parte da mesma pergunta.-->
+
+            <!-- Entrada 5: Seleção Única (Radio) -->
+            <div>
+                <label>Nível de Experiência:</label>
+                <!-- Note que o name="senioridade" é igual em todos! -->
+                <input type="radio" id="jr" name="senioridade" value="junior" checked>
+                <label for="jr">Júnior</label>
+
+                <input type="radio" id="pl" name="senioridade" value="pleno">
+                <label for="pl">Pleno</label>
+
+                <input type="radio" id="sr" name="senioridade" value="senior">
+                <label for="sr">Sênior</label>
+            </div>
+            <br>
+
+            <!-- *Dica:* O atributo `checked` no primeiro `<input>` faz com que ele já venha marcado por padrão.
+
+            ### Entrada 6: Upload de Arquivo (`type="file"`)
+            Como é uma agência de empregos, o candidato precisa mandar o currículo! É aqui que aquele `enctype="multipart/form-data"` que colocamos na tag `<form>` lá em cima brilha.-->
+
+            <!-- Entrada 6: Arquivo (File) -->
+            <div>
+                <label for="curriculo">Envie seu Currículo (Apenas PDF):</label>
+                <!-- O accept=".pdf" impede o usuário de mandar foto de gatinho no lugar do currículo -->
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf" required>
+            </div>
+            <br>
+
+
+            <!-- Vai digitando aí no seu tempo, atualizando a página e clicando para ver como o `<select>` abre e como os `<radio>` interagem entre si. Quando terminar de estilizar essa parte do seu jeito, me avise para irmos para as 4 últimas entradas que faltam para bater a meta da aula!-->
             <!-- Botão provisório para testar a validação do "required" -->
             <button type="submit">Enviar Cadastro</button>
 
