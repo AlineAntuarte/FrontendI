@@ -123,11 +123,13 @@
 
         <!-- Entrada 8: Numérica Deslizante (Range) -->
         <div>
-            <label for="salario">Pretensão Salarial Mínima (R$)</label>
-            <input type="range" name="salario" id="salario" min="1500" max="15000" step="500" value="3000">
-            <!-- min e max definem os limites, step define de quanto em quanto o valor pula -->
+            <div>
+                <label for="salario">Pretensão Salarial Mínima: R$ <output id="visorSalario">3000</output></label>
+                <input type="range" name="salario" id="salario" min="1500" max="15000" step="500" value="3000">
+            </div>
+        </div>
 
-            <!-- O `<input type="range">` cria um "slider" visual, mas nativamente ele não exibe o valor em texto na tela.
+        <!-- O `<input type="range">` cria um "slider" visual, mas nativamente ele não exibe o valor em texto na tela.
             Para o usuário ver o número mudando enquanto arrasta, usamos a tag `<output>` combinada com o evento `oninput`.
             O atributo 'oninput' atualiza o 'visorSalario' em tempo real com o valor da barra
             COMO FUNCIONA CADA ATRIBUTO:
@@ -136,39 +138,24 @@
             * step="500": É o "pulo". Obriga a barra a andar de 500 em 500, impedindo valores como 1532.
             * value="3000": É o valor de partida (onde a bolinha começa quando a página carrega).
             * oninput="...": JavaScript embutido que diz: "sempre que arrastar (input), pegue este valor (this.value) e jogue dentro do visor (visorSalario.value)". -->
+
+        <!-- Entrada 9: Texto Longo (Textarea) -->
+        <div>
+            <label for="resumo">Resumo Profissional</label>
+            <textarea name="resumo" id="resumo" cols="30" rows="10"
+                placeholder="Fale sobre seu diferencial, sua autonomia em resolver problemas, otimizações de setup, etc..."></textarea>
         </div>
+
+        <!-- Entrada 10: Cor (Color) -->
+        <div><label for="cor_cracha">Escolha uma cor de destaque para o seu cracha</label>
+            <input type="color" name="cor_cracha" id="cor_cracha">
         </div>
 
-
-        <article>
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-        </article>
-
-        <article>
-            <div>
-
-            </div>
-        </article>
+        <!--   ### Entradas 11 e 12: Os Botões de Ação (`submit` e `reset`) -->
+        <div>
+            <input type="submit" value="Enviar Cadastro">
+            <input type="reset" value="Limpar Formulário">
+        </div>
 
 
         <article class="item-flex"><!-- Botão provisório para testar a validação do "required" -->
@@ -176,6 +163,7 @@
         </article>
         </form>
     </section>
+    <script src="../src/aula08/app/App.js"></script>
 </body>
 
 </html>
