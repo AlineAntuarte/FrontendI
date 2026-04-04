@@ -100,6 +100,7 @@ section {
 .checkbox {
     display: flex;
     flex-direction: column;
+    /* Organiza em coluna os filhos <article class="checkbox_..."> */
     gap: 5px;
 }
 
@@ -109,12 +110,21 @@ section {
     margin-bottom: 8px;
 }
 
-/* .checkbox_opcoes label:not(:first-child) {
+/* Seleciona a div que guarda o input e o label juntos */
+.checkbox_opcoes div {
     display: flex;
     align-items: center;
+    /* Centraliza a caixinha e o texto na mesma linha */
     gap: 8px;
-} */
+    /* Cria um espaço perfeito de 8px entre o quadradinho e o texto */
+}
 
+/* Opcional: Adicionar um efeito visual ao passar o mouse */
+.checkbox_opcoes div:hover {
+    cursor: pointer;
+    color: #3c292b;
+    /* Um tom mais escuro para destacar a opção */
+}
 
 
 
