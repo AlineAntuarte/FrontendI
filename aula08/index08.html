@@ -85,22 +85,42 @@
         </article>
 
         <article>
-            <div>
-                <label>Quais ferramentas você domina?</label>
+            <!-- Entrada 7: Múltipla Escolha (Checkbox) -->
+            <div class="checkbox">
+                <article class="checkbox_titulo">
+                    <label>Quais ferramentas você domina?</label>
+                </article>
                 <!-- Note que o name="habilidades" identico nas
                 quatro opções as agrupa no backend -->
 
-                <label for="hab_Java"></label>
-                <input type="checkbox">
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_Java" name="habilidades" value="java">
+                        <label for="hab_Java">Java</label>
+                    </div>
+                </article>
 
-                <label for="hab_Git"></label>
-                <input type="checkbox">
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_Git" name="habilidades" value="git">
+                        <label class="checkbox_opcoes" for="hab_Git">Git</label>
+                    </div>
+                </article>
 
-                <label for="hab_Html"></label>
-                <input type="checkbox">
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_HtmlCSS" name="habilidades" value="htmlCSS">
+                        <label class="checkbox_opcoes" for="hab_HtmlCSS">HTML5 e CSS3</label>
+                    </div>
+                </article>
 
-                <label for="hab_Manut.Hardware"></label>
-                <input type="checkbox">
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_ManutencaoDeHardware" name="habilidades"
+                            value="ManutencaoDeHardware">
+                        <label class="checkbox_opcoes" for="hab_ManutencaoDeHardware">Manutençao de Hardware</label>
+                    </div>
+                </article>
             </div>
         </article>
 
