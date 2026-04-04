@@ -1,63 +1,98 @@
 * {
+    /* O asterisco seleciona absolutamente TODOS os elementos do site de uma vez só */
     margin: 0;
+    /* Zera a margem externa padrão que o navegador insere sem a gente pedir */
     padding: 0;
+    /* Zera o recuo interno padrão do navegador */
     box-sizing: border-box;
+    /* Obriga o padding e as bordas a crescerem para "dentro" do elemento, sem aumentar o tamanho total dele */
 }
 
 :root {
+    /* Acessa o nível mais alto do seu documento (a raiz) */
     --fundoPrincipal: #3c292b;
+    /* Cria uma "caixa" (variável) chamada --fundoPrincipal guardando essa cor */
+    --cardPrincipal: #faebd7;
+    /* Cria uma "caixa" (variável) chamada --cardPrincipal guardando essa cor */
+    --textoPrincipal: #4F4F4F;
+    /* Cria uma "caixa" (variável) chamada --textoPrincipal guardando essa cor */
 }
 
-html,
-body {
+html {
+    /* Seleciona a tag <html> que envolve todo o site */
     scroll-behavior: smooth;
-    width: 100%;
+    /* Faz a tela deslizar suavemente quando o usuário clica em um link âncora (como os do menu) */
     overflow-x: hidden;
-    color: antiquewhite;
+    /* Corta qualquer conteúdo que tentar vazar para a direita/esquerda, matando a barra de rolagem horizontal */
 }
 
+/* 1. Tudo que afeta a página inteira em um só lugar */
+body {
+    /* Seleciona a tag <body>, a área visível do seu site */
+
+    background-color: var(--fundoPrincipal);
+    /* Puxa a cor do :root para usar de fundo */
+    color: var(--cardPrincipal);
+    /* Puxa a cor do :root para usar de cor do texto */
+    font-family: 'Times New Roman', Times, serif;
+    /* Define qual fonte os textos devem usar */
+}
+
+/* 2. O comportamento padrão dos grandes blocos do site */
 section,
 header,
 nav,
 footer {
-    width: 100%;
+    /* Agrupa as 4 principais tags semânticas do HTML5 para dar a mesma regra a todas */
     display: flow-root;
-    color: antiquewhite;
+    /* Cria uma barreira mágica (novo contexto de formatação) que impede que margens dos filhos vazem para fora do pai */
 }
 
+/* 3. Regras exclusivas apenas para as seções */
 section {
-    width: 100%;
+    /* Aplica regra apenas nas tags <section> */
     min-height: 300px;
-    display: flow-root;
+    /* Garante que a seção tenha sempre pelo menos 300px de altura, mesmo se estiver vazia */
     padding: 1px 15px;
+    /* Empurra o conteúdo 1px para longe do topo/base e 15px para longe das laterais esquerda/direita */
     font-size: 20px;
+    /* Aumenta o tamanho base das letras que estiverem dentro das seções */
 }
 
+/* 4. A caixa do formulário */
 .formulario-flex {
+    /* Seleciona apenas o elemento que tiver o class="formulario-flex" */
     display: flex;
-    max-width: 1000px;
+    /* Liga o motor do Flexbox nesta caixa */
     flex-direction: column;
-    vertical-align: middle;
-    justify-content: flex-start;
-    box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.3);
-    background-color: antiquewhite;
-    color: #4F4F4F;
-    padding: 15px;
-    margin: 2px auto;
-    margin-top: 35px;
-    
+    /* Manda o Flexbox empilhar os elementos internos de cima para baixo (em coluna) em vez de lado a lado */
     gap: 20px;
+    /* Abre um buraco exato de 20px entre cada item empilhado dentro do formulário */
+
+    max-width: 1000px;
+    /* Trava a largura da caixa para ela nunca ultrapassar 1000 pixels (ótimo para telas de PC enormes) */
+    margin: 35px auto 35px auto;
+    /* Margem externa: 35px em cima, automático nas laterais (centraliza a caixa), e 2px embaixo */
+    padding: 15px;
+    /* Margem interna: impede que os textos e campos encostem nas bordas da caixa do formulário */
+
+    background-color: var(--cardPrincipal);
+    /* Pinta o fundo desta caixa de creme */
+    color: var(--textoPrincipal);
+    /* Pinta o texto de cinza escuro para dar contraste e leitura em cima do fundo creme */
+    box-shadow: 8px 5px 20px rgba(0, 0, 0, 0.3);
+    /* Projeta uma sombra 3D (8px direita, 5px baixo, 20px desfoque, cor preta transparente) */
 }
 
 .item-flex {
+    /* Seleciona apenas o elemento que tiver o class="item-flex" */
     flex: 1;
+    /* Manda o elemento se esticar para ocupar todo o espaço vazio que estiver sobrando dentro da caixa pai */
 }
 
-body {
-    background-color: #3c292b;
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    width: 100%;
-    font-family: 'Times New Roman', Times, serif;
+.file>p {
+    /* Seleciona apenas a tag <p> que estiver DENTRO de um elemento com class="file" */
+    font-size: 14px;
+    /* Diminui o tamanho da letra para 14px */
+    font-style: italic;
 }

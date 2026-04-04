@@ -10,6 +10,11 @@
 </head>
 
 <body>
+    <!-- OBS -->
+    <!-- O atributo required no HTML5 é utilizado para marcar campos de formulário (como <input>, <select>, <textarea>) como obrigatórios.
+        Ele impede que o formulário seja enviado caso o campo esteja vazio, exibindo uma mensagem automática do navegador,
+        garantindo dados mais completos e válidos sem precisar de JavaScript inicial. -->
+
     <section id="titulo" class="formulario-flex">
         <h1>Agência de Empregos - Antuarte</h1>
         <p>Cadastre seu currículo para encontrar a vaga ideal para você.</p>
@@ -36,16 +41,99 @@
         </article>
         <article>
             <!-- Entrada 4: Seleção (Select) -->
+            <div><label for="vaga">Vaga de Interesse: </label>
+                <select name="vaga" id="vaga" required>
+                    <optgroup label="Desenvolvimento">
+                        <option value="frontend"> Desenvolvedor(a) Frontend</option>
+                        <option value="backend">Desenvolvedor(a) Backend</option>
+                        <option value="fullstack">Desenvolvedor(a) Fullstack</option>
+                    </optgroup>
+                    <optgroup label="Infraestrutura">
+                        <option value="redes">Analista de Redes</option>
+                        <option value="Banco.D">Administrador(a) de Banco de Dados</option>
+                    </optgroup>
+                </select>
+            </div>
         </article>
         <article>
             <!-- Entrada 5: Seleção Única (Radio) -->
+            <div>
+                <label for="">Nível de Experiência: </label>
+
+                <input type="radio" name="senioridade" id="Jr" value="Jr" checked>
+                <label for="">Júnior</label>
+
+                <input type="radio" name="senioridade" id="Pl" value="Pl">
+                <label for="">Pleno</label>
+
+                <input type="radio" name="senioridade" id="Sr" value="Sr">
+                <label for="">Sênior</label>
+            </div>
         </article>
         <article>
             <!-- Entrada 6: Arquivo (File) -->
+            <div class="file">
+                <label for="curriculo">Envie seu Currículo: </label>
+                <input type="file" name="curriculo" id="curriculo" accept=".pdf" required>
+                <p>
+                    <strong>Apenas PDF</strong>
+                </p>
+            </div>
         </article>
         <article class="item-flex"><!-- Botão provisório para testar a validação do "required" -->
             <button type="submit">Enviar Cadastro</button>
         </article>
+
+        <article>
+            <div>
+                <label>Quais ferramentas você domina?</label>
+                <!-- Note que o name="habilidades" identico nas
+                quatro opções as agrupa no backend -->
+
+                <label for="hab_Java"></label>
+                <input type="checkbox">
+
+                <label for="hab_Git"></label>
+                <input type="checkbox">
+
+                <label for="hab_Html"></label>
+                <input type="checkbox">
+
+                <label for="hab_Manut.Hardware"></label>
+                <input type="checkbox">
+            </div>
+        </article>
+
+        <article>
+            <div>
+
+            </div>
+        </article>
+
+        <article>
+            <div>
+
+            </div>
+        </article>
+
+        <article>
+            <div>
+
+            </div>
+        </article>
+
+        <article>
+            <div>
+
+            </div>
+        </article>
+
+        <article>
+            <div>
+
+            </div>
+        </article>
+
         </form>
     </section>
 </body>

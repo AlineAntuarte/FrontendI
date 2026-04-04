@@ -41,14 +41,10 @@
             </div>
             <br>
 
-            <!-- Isso é música para os meus ouvidos, Aline! Digitar o código linha por linha, quebrar as coisas e ver a tela mudando a cada "F5" é a verdadeira essência de como se aprende a programar de verdade. 
-
-            Já que você tem as entradas 1, 2 e 3 (Texto, E-mail e Data) prontas, vamos para o próximo bloco de perguntas da nossa Agência de Empregos. O professor pediu pelo menos 10 entradas, então agora vamos adicionar mais três tipos muito importantes: **Menu de Seleção, Botões de Rádio e Upload de Arquivo**.
-
-            Você vai digitar esses blocos logo abaixo da sua entrada de Data e **antes** do botão de "Enviar Cadastro".
-
+            <!--
             ### Entrada 4: Menu Suspenso (`<select>`)
-            Para a vaga de interesse, vamos usar o `<select>`. O legal aqui é usar a tag `<optgroup>` que o professor mostrou nos slides para criar "categorias" de vagas (Desenvolvimento e Infraestrutura). Fica muito organizado!-->
+            Para a vaga de interesse, vamos usar o `<select>`. O legal aqui é usar a tag `<optgroup>` que o professor mostrou nos slides para criar "categorias" de vagas (Desenvolvimento e Infraestrutura). Fica muito organizado!
+            -->
 
             <!-- Entrada 4: Seleção (Select) -->
             <div>
@@ -100,11 +96,88 @@
             </div>
             <br>
 
+            <!-- ### Entrada 7: Caixas de Seleção (`type="checkbox"`)
+            Diferente do *radio* (onde você só escolhe um), o *checkbox* permite que o usuário marque várias opções.
+            Ideal para listar as ferramentas que a pessoa domina. -->
 
-            <!-- Vai digitando aí no seu tempo, atualizando a página e clicando para ver como o `<select>` abre e como os `<radio>` interagem entre si. Quando terminar de estilizar essa parte do seu jeito, me avise para irmos para as 4 últimas entradas que faltam para bater a meta da aula!-->
-            <!-- Botão provisório para testar a validação do "required" -->
-            <button type="submit">Enviar Cadastro</button>
 
+            <!-- Entrada 7: Múltipla Escolha (Checkbox) -->
+            <div>
+                <label>Quais ferramentas você domina?</label><br>
+                <!-- Note que o name="habilidades" agrupa as opções no backend -->
+                <input type="checkbox" id="hab_java" name="habilidades" value="java">
+                <label for="hab_java">Java</label>
+
+                <input type="checkbox" id="hab_git" name="habilidades" value="git">
+                <label for="hab_git">Git</label>
+
+                <input type="checkbox" id="hab_html" name="habilidades" value="html_css">
+                <label for="hab_html">HTML5 e CSS3</label>
+
+                <input type="checkbox" id="hab_hw" name="habilidades" value="hardware">
+                <label for="hab_hw">Manutenção de Hardware</label>
+            </div>
+            <br>
+
+
+            <!--  ### Entrada 8: Controle Numérico Deslizante (`type="range"`)
+            Em vez de fazer o usuário digitar um número, o `range` cria uma barrinha de arrastar. Perfeito para a
+            expectativa salarial. -->
+
+
+            <!-- Entrada 8: Numérica Deslizante (Range) -->
+            <div>
+                <label for="salario">Pretensão Salarial Mínima (R$):</label><br>
+                <!-- min e max definem os limites, step define de quanto em quanto o valor pula -->
+                <input type="range" id="salario" name="salario" min="1500" max="15000" step="500" value="3000">
+            </div>
+            <br>
+
+            <!-- 
+            ### Entrada 9: Área de Texto Longo (`<textarea>`)
+            A tag `<input type="text">` serve para coisas curtas (nome, cidade).
+            Quando queremos um texto grande, usamos o `<textarea>`.
+            Ele não usa o atributo `value`, o texto padrão (se houver) vai entre
+            a abertura e o fechamento da tag.-->
+
+            <!-- Entrada 9: Texto Longo (Textarea) -->
+            <div>
+                <label for="resumo">Resumo Profissional:</label><br>
+                <!-- rows e cols definem o tamanho inicial da caixa na tela -->
+                <textarea id="resumo" name="resumo" rows="5" cols="50"
+                    placeholder="Fale sobre seu diferencial, sua autonomia em resolver problemas, otimizações de setup..."></textarea>
+            </div>
+            <br>
+
+
+            <!-- ### Entrada 10: Seletor de Cores (`type="color"`)
+            Essa é uma das entradas mais divertidas do HTML5. Ela abre a paleta de cores do próprio sistema operacional
+            do usuário. -->
+
+
+            <!-- Entrada 10: Cor (Color) -->
+            <div>
+                <label for="cor_cracha">Escolha uma cor de destaque para o seu crachá:</label>
+                <!-- O value para cores sempre deve ser em Hexadecimal (ex: #000000) -->
+                <input type="color" id="cor_cracha" name="cor_cracha" value="#366899">
+            </div>
+            <br>
+
+
+            <!--   ### Entradas 11 e 12: Os Botões de Ação (`submit` e `reset`)
+            Para finalizar, o formulário precisa de um botão para enviar os dados para o servidor e um botão (opcional,
+            mas legal de ter) para apagar tudo caso a pessoa desista ou queira recomeçar.-->
+
+            <!-- Entradas Finais: Botões de Ação -->
+            <div>
+                <input type="submit" value="Enviar Cadastro">
+                <input type="reset" value="Limpar Formulário">
+            </div>
+
+
+            <!-- Com isso, você tem um formulário robusto, com **12 entradas**, passando por absolutamente todos os tipos
+            exigidos nos slides da Aula 08. Vai digitando, testando a barrinha do *range*, clicando na cor para ver a
+            paleta abrir, e validando tudo no navegador. -->
         </form>
     </section>
 </body>
