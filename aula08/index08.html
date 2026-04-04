@@ -80,9 +80,6 @@
                 </p>
             </div>
         </article>
-        <article class="item-flex"><!-- Botão provisório para testar a validação do "required" -->
-            <button type="submit">Enviar Cadastro</button>
-        </article>
 
         <article>
             <!-- Entrada 7: Múltipla Escolha (Checkbox) -->
@@ -124,6 +121,31 @@
             </div>
         </article>
 
+        <!-- Entrada 8: Numérica Deslizante (Range) -->
+        <div>
+            <label for="salario">Pretensão Salarial Mínima (R$)</label>
+            <input type="range" name="salario" id="salario" min="1500" max="15000" step="500" value="3000">
+            <!-- min e max definem os limites, step define de quanto em quanto o valor pula -->
+
+            <!-- O `<input type="range">` cria um "slider" visual, mas nativamente ele não exibe o valor em texto na tela.
+            Para o usuário ver o número mudando enquanto arrasta, usamos a tag `<output>` combinada com o evento `oninput`.
+            O atributo 'oninput' atualiza o 'visorSalario' em tempo real com o valor da barra
+            COMO FUNCIONA CADA ATRIBUTO:
+            * type="range": Transforma o campo comum em uma barra deslizante.
+            * min="1500" e max="15000": Definem o piso e o teto absoluto da barra.
+            * step="500": É o "pulo". Obriga a barra a andar de 500 em 500, impedindo valores como 1532.
+            * value="3000": É o valor de partida (onde a bolinha começa quando a página carrega).
+            * oninput="...": JavaScript embutido que diz: "sempre que arrastar (input), pegue este valor (this.value) e jogue dentro do visor (visorSalario.value)". -->
+        </div>
+        </div>
+
+
+        <article>
+            <div>
+
+            </div>
+        </article>
+
         <article>
             <div>
 
@@ -148,12 +170,10 @@
             </div>
         </article>
 
-        <article>
-            <div>
 
-            </div>
+        <article class="item-flex"><!-- Botão provisório para testar a validação do "required" -->
+            <button type="submit">Enviar Cadastro</button>
         </article>
-
         </form>
     </section>
 </body>
