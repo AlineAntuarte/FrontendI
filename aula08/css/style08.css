@@ -127,7 +127,15 @@ section {
 }
 
 
+.resumoPai {
+    display: flex;
+    flex-direction: column;
+    /* Organiza os filhos em coluna */
+}
 
+.resumoFilho:first-child {
+    margin-bottom: 10px;
+}
 
 
 

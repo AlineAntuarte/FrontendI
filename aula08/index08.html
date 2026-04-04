@@ -140,10 +140,14 @@
             * oninput="...": JavaScript embutido que diz: "sempre que arrastar (input), pegue este valor (this.value) e jogue dentro do visor (visorSalario.value)". -->
 
         <!-- Entrada 9: Texto Longo (Textarea) -->
-        <div>
-            <label for="resumo">Resumo Profissional</label>
-            <textarea name="resumo" id="resumo" cols="30" rows="10"
-                placeholder="Fale sobre seu diferencial, sua autonomia em resolver problemas, otimizações de setup, etc..."></textarea>
+        <div class="resumoPai">
+            <article class="resumoFilho">
+                <label for="resumo">Resumo Profissional</label>
+            </article>
+            <article>
+                <textarea name="resumo" id="resumo" cols="30" rows="10"
+                    placeholder="Fale sobre seu diferencial, sua autonomia em resolver problemas, otimizações de setup, etc..."></textarea>
+            </article>
         </div>
 
         <!-- Entrada 10: Cor (Color) -->
@@ -156,11 +160,6 @@
             <input type="submit" value="Enviar Cadastro">
             <input type="reset" value="Limpar Formulário">
         </div>
-
-
-        <article class="item-flex"><!-- Botão provisório para testar a validação do "required" -->
-            <button type="submit">Enviar Cadastro</button>
-        </article>
         </form>
     </section>
     <script src="../src/aula08/app/App.js"></script>
