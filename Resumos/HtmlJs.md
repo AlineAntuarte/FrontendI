@@ -1,11 +1,11 @@
-## 10. Como conectar um arquivo JavaScript externo (Exemplo do Range)
+# Como conectar um arquivo JavaScript externo (Exemplo do Range)
 
 Para manter o projeto organizado, o ideal é separar a estrutura (HTML) do comportamento (JavaScript). Com base na nossa estrutura de pastas, temos:
 
 * **O HTML em:** `aula08/index08.html`
 * **O JavaScript em:** `src/aula08/app/App.js`
 
-### Passo 1: Limpar o HTML e conectar o arquivo `.js`
+## Passo 1: Limpar o HTML e conectar o arquivo `.js`
 
 No seu arquivo `index08.html`, você vai deixar a barra deslizante e o visor "limpos" (sem JavaScript misturado), garantindo que ambos tenham um `id`.
 
