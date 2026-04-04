@@ -143,3 +143,53 @@ Imagine que seu projeto cresceu e agora, além do `.meu-container` no meio, voc�
 
 * Use `display: flex` no `body` com `justify-content` e `align-items` se a página for um **"Login" ou "Landing Page simples"** onde um único elemento precisa ficar isolado no centro da tela.
 * Se a página for evoluir para ter **várias seções (cabeçalho, conteúdo principal, rodapé)**, remova o `display: flex` do `body` e deixe o fluxo natural do documento trabalhar, ou aplique `flex-direction: column` para controlar a distribuição vertical da página inteira.
+
+## 6. Selecionando Elementos: Classes vs. IDs e Pseudo-classes
+
+**Cenário:** Temos uma `div` com 5 `<label>` dentro, mas queremos aplicar estilo a apenas 4 deles.
+
+### ❌ O que NÃO fazer: Repetir IDs
+
+Nunca dê o mesmo `id` para múltiplos elementos. O `id` é um identificador único (como um CPF). Se você precisa agrupar elementos, o correto é usar `class`.
+
+---
+
+### ✅ Solução 1: A forma mais segura (Usando Classes)
+
+Em vez de um ID repetido, você aplica uma mesma **classe** nos 4 labels que deseja alterar. Essa é a melhor abordagem se os labels que vão receber estilo estiverem "espalhados" de forma aleatória.
+
+**HTML:**
+
+```html
+<div class="grupo-labels">
+  <label class="estilo-destaque">Label 1</label>
+  <label class="estilo-destaque">Label 2</label>
+  <label>Label 3 (Normal)</label> <!-- Este fica sem estilo -->
+  <label class="estilo-destaque">Label 4</label>
+  <label class="estilo-destaque">Label 5</label>
+</div>
+```
+
+## 7. Como funciona o seletor `:not(:first-child)`
+
+O seletor `:not(:first-child)` é uma ferramenta muito prática para estilizar listas e grupos de elementos, mas que exige atenção à estrutura do HTML. Ele é a combinação de duas pseudo-classes:
+
+* `:first-child`: Seleciona estritamente o **primeiro elemento filho** dentro de um contêiner pai.
+* `:not()`: Funciona como uma negação (uma exceção).
+
+Portanto, a regra `elemento:first-child` significa: **"Aplique este estilo ao elemento se ele for o primeiro filho do container".**
+
+Do contrário, a regra `elemento:not(:first-child)` significa: **"Aplique este estilo a todos os elementos especificados, EXCETO se ele for o primeiro filho do container".**
+
+### 🌟 Exemplo de Uso Comum (Espaçamento em Listas)
+
+É um truque clássico para adicionar margens ou bordas divisórias entre itens, garantindo que o primeiro item não fique com um espaço sobrando no topo.
+
+**HTML:**
+
+```html
+<div class="menu">
+    <a href="#">Home</a>     <!-- Este é o :first-child (Ignorado pelo CSS) -->
+    <a href="#">Sobre</a>    <!-- Recebe o estilo -->
+    <a href="#">Contato</a>  <!-- Recebe o estilo -->
+</div>
