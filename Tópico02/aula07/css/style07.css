@@ -1,0 +1,411 @@
+/* Isso garante que nada tenha margem sobrando por padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Faz o padding não 'estourar' a largura */
+}
+
+:root {
+    --fundoPrincipal: #366899;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+    /* Isso impede que o site 'dance' para os lados */
+}
+
+section,
+header,
+nav,
+footer {
+    width: 100%;
+    display: flow-root;
+    /* Se um elemento qualquer contém elementos-filho, o flow-root faz com que o pai envolva completamente esses elementos, ajustando sua altura automaticamente. */
+}
+
+section {
+    width: 100%;
+    min-height: 300px;
+    display: flow-root;
+    padding: 1px 15px;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../imagem/RioDeJaneiroBackground.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: var(--fundoPrincipal);
+    margin: 0;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.menu {
+    background-color: rgb(13, 14, 24);
+    padding: 10px;
+    width: 100%;
+    min-height: 5px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+.menu>a {
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+}
+
+.titulo {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    min-height: 5px;
+    text-align: center;
+    color: white;
+    padding: 2px;
+}
+
+/* Padroniza o tamanho das duas seções para o layout não ficar torto */
+.impar {
+    background-color: rgba(240, 248, 255, 0.6);
+    padding: 30px 40px;
+    /* 30px em cima/baixo, 40px nas laterais */
+}
+
+.par {
+    background-color: rgba(150, 164, 177, 0.3);
+    padding: 30px 40px;
+    /* Exatamente igual à impar para manter a simetria */
+    color: white;
+}
+
+/* Devolve o recuo natural das listas que o Reset havia apagado */
+ul,
+ol {
+    padding-left: 40px;
+    /* Empurra o texto para dar espaço aos números/bolinhas */
+    margin-top: 15px;
+    /* Dá um respiro entre o título H2 e o começo da lista */
+}
+
+li img {
+    width: 25px;
+    /* Tamanho do ícone */
+    /* largura */
+    height: auto;
+    /* altura */
+    vertical-align: middle;
+    /* alinhamento vertical */
+    margin-left: 10px;
+    /* margem direita */
+}
+
+.carreira-estilo {
+    background-color: rgba(48, 116, 133, 0.85);
+    padding: 10px;
+}
+
+.carreira-estilo>h2 {
+    color: white;
+    margin: 15px auto;
+    padding: 15px 5px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #2c3e50;
+    width: 200px;
+}
+
+.img-carreira {
+    width: 32%;
+    /* Cada foto irá ocupar 1/3 da tela */
+    height: 250px;
+    /* Mantém uma altura fixa para as três */
+    object-fit: cover;
+    /* Faz a imagem preencher o quadro sem distorcer (muito importante!) */
+    border-radius: 8px;
+    /* Adiciona cantos arredondados para um visual mais suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    /*Sombrinha elegante, amou?*/
+    margin-bottom: 20px;
+    /* Adiciona espaço apenas abaixo da imagem */
+}
+
+/* Mágica do Flexbox para alinhar lado a lado */
+.conteiner-flex {
+    display: flex;
+    justify-content: space-between;
+    /* Distribui o espaço entre os elementos */
+    gap: 20px;
+    /* Adiciona um espaço fixo entre as imagens */
+    margin-bottom: 30px;
+    /* Adiciona um espaço abaixo do conteiner para separar da próxima seção (textos e imagens)*/
+}
+
+.item-flex {
+    flex: 1;
+    /*Faz os três blocos de texto terem a mesma largura*/
+    text-align: justify;
+}
+
+/* 1. Centraliza o Título da Seção */
+.titulo-Docentes {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+/* 2. O conteiner Flexível para as caixinhas */
+.conteiner-Docentes {
+    display: flex;
+    flex-wrap: nowrap;
+    /* PROÍBE os cards de caírem para a linha de baixo */
+    overflow-x: auto;
+    /* Cria a rolagem horizontal */
+
+    /* Efeito Carrosel - Scroll Snap */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    padding: 20px;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* 3. O Visual da Caixinha (Card) individual */
+.card-Docentes {
+    background-color: rgba(240, 248, 255, 0.6);
+    /* Fundo azulado com um pouco de transparência para deixar o fundo aparecer */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    /* Cantos arredondados para um visual mais suave */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante para dar profundidade */
+    text-align: center;
+    /* Centraliza o texto dentro da caixinha */
+
+    flex: 0 0 300px;
+    /* Não encolhe, não cresce, fica exato em 300px */
+    /* Trava o card na tela quando o usuário rolar */
+    scroll-snap-align: center;
+
+    border-top: 5px solid var(--fundoPrincipal);
+    /* Uma borda colorida no topo para destacar cada card */
+    transition: transform 0.3s;
+
+}
+
+/* Animação: Dá um "pulinho" quando você passa o mouse por cima */
+.card-Docentes:hover {
+    transform: translateY(-8px);
+    /* Move a caixinha para cima */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    /* Aumenta a sombra para dar um efeito de destaque */
+}
+
+/* BÔNUS: Estilizando a barra de rolagem para ficar bonitinha (estilo setinha invisível) */
+.conteiner-Docentes::-webkit-scrollbar {
+    height: 8px;
+    /* Altura da barra de rolagem horizontal */
+}
+
+.conteiner-Docentes::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    /* Deixa o fundo da barra transparente */
+    border-radius: 10px;
+}
+
+.conteiner-Docentes::-webkit-scrollbar-thumb {
+    background: var(--fundoPrincipal);
+    /* Cor do "thumb" (a parte que você arrasta) */
+    border-radius: 10px;
+}
+
+/* BÔNUS: Estilizando a barra de rolagem para ficar bonitinha (estilo setinha invisível) */
+
+/* 4. Remove a margem padrão chata da tag <dd> */
+.card-Docentes dd {
+    margin-left: 0;
+    /* Remove o recuo padrão */
+    margin-top: 8px;
+    /* Dá um respiro entre o título (dt) e a descrição (dd) */
+    color: #333;
+    /* Cor do texto para melhor leitura */
+}
+
+/* 5. Estiliza os links diretamente dentro da caixinha */
+.card-Docentes a {
+    color: var(--fundoPrincipal);
+    /* Usa a cor principal do site para os links */
+    text-decoration: none;
+    /* Remove o sublinhado feio */
+    transition: 0.3s;
+    /* Deixa a mudança de cor suave */
+}
+
+/* O efeito ao passar o mouse */
+.card-Docentes a:hover {
+    color: #0c2b4b;
+    /* Escurece a cor para indicar que é clicável */
+}
+
+.Grade>h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+/* 1. A célula (th) cuida das cores e de manter tudo perfeitamente no centro */
+.titulo-lateral {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    /* Centraliza na horizontal */
+    vertical-align: middle;
+    /* Centraliza na vertical (Crucial para tabelas!) */
+    padding: 10px;
+}
+
+/* 2. O span cuida exclusivamente de girar o texto */
+.titulo-lateral span {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: inline-block;
+    /* Permite que o span seja girado sem quebrar o layout da célula */
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.Grade tbody {
+    color: #333;
+}
+
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+tbody tr:hover {
+    background-color: rgba(121, 147, 187, 0.6);
+    transition: 0.3s;
+}
+
+.viagens h2 {
+    text-align: center;
+    margin: 0 2px 2px 2px;
+    color: #2c3e50;
+}
+
+.viagens img {
+    width: 80px;
+    height: 80px;
+    vertical-align: center;
+}
+
+.menubottom {
+    background-color: rgb(13, 14, 24);
+    padding: 10px;
+    width: 100%;
+    min-height: 5px;
+    text-align: center;
+    z-index: 1000;
+    margin-bottom: 0;
+}
+
+.menubottom>a {
+    text-decoration: none;
+    color: white;
+    bottom: 0;
+}
+
+/* 1. Estiliza a "Caixa" que guarda o texto e o player */
+.musica {
+    background-color: rgba(13, 14, 24, 0.7);
+    /* Fundo sutilmente transparente */
+    border-radius: 15px;
+    /* Deixa as quinas redondas */
+    padding: 15px;
+    width: 500px;
+    /* Impede que a caixa estique pela tela toda */
+    margin: 20px auto;
+    /* Centraliza a caixa perfeitamente no footer */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    /* Dá uma sombra 3D */
+}
+
+/* 2. Estiliza o texto do BTS */
+.musica>p {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    /* Dá um respiro entre o texto e o botão de play */
+    font-style: italic;
+}
+
+/* 3. Estiliza o Player Nativo */
+.musica audio {
+    width: 100%;
+    /* Faz a barra de progresso ocupar 100% da caixa que criamos */
+    outline: none;
+    /* Remove a borda azul feia ao clicar */
+    opacity: 0.5;
+}
+
+/* Brilho extra ao passar o mouse */
+.musica audio:hover {
+    opacity: 1;
+}
+
+.selos-w3c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.selos-w3c img {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.selos-w3c :hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(13, 14, 24, 0.75);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #366899;
+    text-decoration: none;
+}

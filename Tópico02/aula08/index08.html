@@ -1,0 +1,168 @@
+<!-- Aula 08 - Formulários -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 08 - Formulários</title>
+    <link rel="shortcut icon" href="../imagem/IconesNavegador/IconeLivro.png">
+    <link rel="stylesheet" href="css/style08.css">
+</head>
+
+<body>
+    <!-- OBS -->
+    <!-- O atributo required no HTML5 é utilizado para marcar campos de formulário (como <input>, <select>, <textarea>) como obrigatórios.
+        Ele impede que o formulário seja enviado caso o campo esteja vazio, exibindo uma mensagem automática do navegador,
+        garantindo dados mais completos e válidos sem precisar de JavaScript inicial. -->
+
+    <section id="titulo" class="formulario-flex">
+        <h1>Agência de Empregos - Antuarte</h1>
+        <p>Cadastre seu currículo para encontrar a vaga ideal para você.</p>
+        <article class="item-flex">
+            <!-- ABERTURA DO FORMULÁRIO -->
+            <form action="#" method="post" enctype="multipart/form-data">
+                <!-- Entrada 1: Texto -->
+                <div>
+                    <label for="nome">Nome Completo: </label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+        </article>
+        <article class="item-flex"><!-- Entrada 2: E-mail -->
+            <div>
+                <label for="email">E-mail profissional: </label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+            </div>
+        </article>
+        <article class="item-flex"><!-- Entrada 3: Tempo (Data) -->
+            <div>
+                <label for="nascimento">Data de nascimento: </label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+        </article>
+        <article>
+            <!-- Entrada 4: Seleção (Select) -->
+            <div><label for="vaga">Vaga de Interesse: </label>
+                <select name="vaga" id="vaga" required>
+                    <optgroup label="Desenvolvimento">
+                        <option value="frontend"> Desenvolvedor(a) Frontend</option>
+                        <option value="backend">Desenvolvedor(a) Backend</option>
+                        <option value="fullstack">Desenvolvedor(a) Fullstack</option>
+                    </optgroup>
+                    <optgroup label="Infraestrutura">
+                        <option value="redes">Analista de Redes</option>
+                        <option value="Banco.D">Administrador(a) de Banco de Dados</option>
+                    </optgroup>
+                </select>
+            </div>
+        </article>
+        <article>
+            <!-- Entrada 5: Seleção Única (Radio) -->
+            <div>
+                <label for="">Nível de Experiência: </label>
+
+                <input type="radio" name="senioridade" id="Jr" value="Jr" checked>
+                <label for="">Júnior</label>
+
+                <input type="radio" name="senioridade" id="Pl" value="Pl">
+                <label for="">Pleno</label>
+
+                <input type="radio" name="senioridade" id="Sr" value="Sr">
+                <label for="">Sênior</label>
+            </div>
+        </article>
+        <article>
+            <!-- Entrada 6: Arquivo (File) -->
+            <div class="file">
+                <label for="curriculo">Envie seu Currículo: </label>
+                <input type="file" name="curriculo" id="curriculo" accept=".pdf" required>
+                <p>
+                    <strong>Apenas PDF</strong>
+                </p>
+            </div>
+        </article>
+
+        <article>
+            <!-- Entrada 7: Múltipla Escolha (Checkbox) -->
+            <div class="checkbox">
+                <article class="checkbox_titulo">
+                    <label>Quais ferramentas você domina?</label>
+                </article>
+                <!-- Note que o name="habilidades" identico nas
+                quatro opções as agrupa no backend -->
+
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_Java" name="habilidades" value="java">
+                        <label for="hab_Java">Java</label>
+                    </div>
+                </article>
+
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_Git" name="habilidades" value="git">
+                        <label class="checkbox_opcoes" for="hab_Git">Git</label>
+                    </div>
+                </article>
+
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_HtmlCSS" name="habilidades" value="htmlCSS">
+                        <label class="checkbox_opcoes" for="hab_HtmlCSS">HTML5 e CSS3</label>
+                    </div>
+                </article>
+
+                <article class="checkbox_opcoes">
+                    <div>
+                        <input type="checkbox" id="hab_ManutencaoDeHardware" name="habilidades"
+                            value="ManutencaoDeHardware">
+                        <label class="checkbox_opcoes" for="hab_ManutencaoDeHardware">Manutençao de Hardware</label>
+                    </div>
+                </article>
+            </div>
+        </article>
+
+        <!-- Entrada 8: Numérica Deslizante (Range) -->
+        <div>
+            <div>
+                <label for="salario">Pretensão Salarial Mínima: R$ <output id="visorSalario">3000</output></label>
+                <input type="range" name="salario" id="salario" min="1500" max="15000" step="500" value="3000">
+            </div>
+        </div>
+
+        <!-- O `<input type="range">` cria um "slider" visual, mas nativamente ele não exibe o valor em texto na tela.
+            Para o usuário ver o número mudando enquanto arrasta, usamos a tag `<output>` combinada com o evento `oninput`.
+            O atributo 'oninput' atualiza o 'visorSalario' em tempo real com o valor da barra
+            COMO FUNCIONA CADA ATRIBUTO:
+            * type="range": Transforma o campo comum em uma barra deslizante.
+            * min="1500" e max="15000": Definem o piso e o teto absoluto da barra.
+            * step="500": É o "pulo". Obriga a barra a andar de 500 em 500, impedindo valores como 1532.
+            * value="3000": É o valor de partida (onde a bolinha começa quando a página carrega).
+            * oninput="...": JavaScript embutido que diz: "sempre que arrastar (input), pegue este valor (this.value) e jogue dentro do visor (visorSalario.value)". -->
+
+        <!-- Entrada 9: Texto Longo (Textarea) -->
+        <div class="resumoPai">
+            <article class="resumoFilho">
+                <label for="resumo">Resumo Profissional</label>
+            </article>
+            <article>
+                <textarea name="resumo" id="resumo" cols="30" rows="10"
+                    placeholder="Fale sobre seu diferencial, sua autonomia em resolver problemas, otimizações de setup, etc..."></textarea>
+            </article>
+        </div>
+
+        <!-- Entrada 10: Cor (Color) -->
+        <div><label for="cor_cracha">Escolha uma cor de destaque para o seu cracha</label>
+            <input type="color" name="cor_cracha" id="cor_cracha">
+        </div>
+
+        <!--   ### Entradas 11 e 12: Os Botões de Ação (`submit` e `reset`) -->
+        <div>
+            <input type="submit" value="Enviar Cadastro">
+            <input type="reset" value="Limpar Formulário">
+        </div>
+        </form>
+    </section>
+    <script src="../src/aula08/app/App.js"></script>
+</body>
+
+</html>
