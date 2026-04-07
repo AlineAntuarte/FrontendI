@@ -40,8 +40,8 @@ O projeto está organizado cronologicamente por aulas. Cada pasta contém os arq
    git clone [https://github.com/AlineAntuarte/FrontendI.git](https://github.com/AlineAntuarte/FrontendI.git)
    ```
 
-1. Navegue até a pasta da aula desejada (ex: `aula08`).
-2. Abra o arquivo `index.html` correspondente em qualquer navegador atualizado (Chrome, Edge, Firefox ou Safari).
+2. Navegue até a pasta da aula desejada (ex: `aula08`).
+3. Abra o arquivo `index.html` correspondente em qualquer navegador atualizado (Chrome, Edge, Firefox ou Safari).
 
 ---
 
