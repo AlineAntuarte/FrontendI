@@ -1,0 +1,29 @@
+/* ==========================================
+   RESET UNIVERSAL E VARIÁVEIS (CSS3)
+========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Escolha suas novas cores para essa aula! Deixei essas de sugestão para um tema mais "Dark/Tech" */
+    --cor-fundo: #111027;
+    --cor-texto: #FFF4EC;
+    --cor-destaque: #16ABCD;
+    --cor-secundaria: #277756;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    /* Usando uma fonte sem serifa para um ar mais limpo e moderno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    /* Melhora a leitura dos textos longos */
+}
