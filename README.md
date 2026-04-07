@@ -4,8 +4,8 @@ Repositório destinado aos estudos da disciplina de **Programação Front-end I*
 
 ## 📚 Tópicos Abrangidos e Habilidades Desenvolvidas
 
-* **Estruturação com HTML5:** Domínio de tags semânticas (`<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`), criação de listas (`<ul>`, `<ol>`, `<dl>`) e construção de tabelas de dados complexas (com mesclagem avançada de células utilizando `rowspan` e `colspan`).
-* **Estilização com CSS3:** Separação de responsabilidades com folhas de estilo externas, aplicação do Box Model (`margin`, `padding`), uso de variáveis globais (`:root`), controle de posicionamento (`sticky`, `fixed`), e criação de interfaces modernas com **Flexbox** e **CSS Scroll Snap** (para carrosséis interativos).
+* **Estruturação com HTML5:** Domínio de tags semânticas (`<header>`, `<nav>`, `<section>`, `<article>`, `<footer>`), criação de listas (`<ul>`, `<ol>`, `<dl>`), construção de tabelas de dados complexas (com mesclagem avançada de células utilizando `rowspan` e `colspan`), e **criação de formulários interativos** (`<form>`, `<input>`, `<select>`, `<textarea>`).
+* **Estilização com CSS3:** Separação de responsabilidades com folhas de estilo externas, aplicação do Box Model (`margin`, `padding`), uso de variáveis globais (`:root`), controle de posicionamento (`sticky`, `fixed`), criação de interfaces modernas com **Flexbox** e **CSS Scroll Snap** (para carrosséis interativos), e **estilização de formulários**.
 * **Seletores Avançados:** Uso de pseudo-classes como `:nth-child` para automação de estilos e `:hover` para interatividade em links e tabelas, compreendendo a hierarquia de seletores (descendentes e filhos diretos `>`).
 * **Multimídia e Navegação:** Gerenciamento de caminhos relativos para imagens e ícones, formatação de links âncora para navegação suave (*Smooth Scroll*), links externos, protocolos de comunicação rápida (`mailto:` e `tel:`), e incorporação nativa de mídias (`<audio>`).
 
@@ -20,6 +20,7 @@ O projeto está organizado cronologicamente por aulas. Cada pasta contém os arq
 * [**aula05/**](./aula05/): Refatoração para HTML Semântico (substituição de `divs` genéricas) e entendimento prático dos modelos de renderização (Bloco vs. Linha).
 * [**aula06/**](./aula06/): Organização com elementos genéricos, caracteres de escape, rotas de links, multimídia e introdução ao Flexbox para alinhamento horizontal de blocos de texto e imagens.
 * [**aula07/**](./aula07/): Validação W3C com selos de aprovação (HTML5 e CSS3 Nível 3), tabelas avançadas (mesclagem de linhas e colunas), incorporação de mídias nativas e design de componentes em formato de *cards* com rolagem estilo carrossel.
+* [**aula08/**](./aula08/): Construção de formulários semânticos e acessíveis. Exploração de mais de 10 tipos diferentes de entradas (texto, e-mail, data, select, radio, file, checkbox, range numérico com visor em tempo real, textarea, color, submit e reset), com conexão correta de atributos (`id`, `for`, `name`, `value`) e estruturação de layout via CSS Flexbox.
 
 *(As pastas de aulas futuras já estão mapeadas na estrutura e serão documentadas conforme o andamento do semestre).*
 
@@ -39,8 +40,8 @@ O projeto está organizado cronologicamente por aulas. Cada pasta contém os arq
    git clone [https://github.com/AlineAntuarte/FrontendI.git](https://github.com/AlineAntuarte/FrontendI.git)
    ```
 
-2. Navegue até a pasta da aula desejada (ex: `aula07`).
-3. Abra o arquivo `index.html` correspondente em qualquer navegador atualizado (Chrome, Edge, Firefox ou Safari).
+1. Navegue até a pasta da aula desejada (ex: `aula08`).
+2. Abra o arquivo `index.html` correspondente em qualquer navegador atualizado (Chrome, Edge, Firefox ou Safari).
 
 ---
 
